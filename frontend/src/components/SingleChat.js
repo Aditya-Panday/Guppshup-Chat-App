@@ -55,7 +55,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `http://127.0.0.1:5000/api/message/${selectedChat._id}`,
+        `/api/message/${selectedChat._id}`,
         config
       );
       // console.log(messages)
@@ -116,7 +116,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "http://127.0.0.1:5000/api/message",
+          "/api/message",
           {
             content: newMessage,
             chatId: selectedChat._id,
