@@ -58,7 +58,7 @@ const GroupChatModal = ({ children }) => { // Functional component definition wi
         },
       };
 
-      const { data } = await axios.get(`http://127.0.0.1:5000/api/user?search=${search}`, config); // Make GET request to search users
+      const { data } = await axios.get(`/api/user?search=${search}`, config); // Make GET request to search users
       
       setLoading(false); // Set loading state to false
       setSearchResult(data); // Update search result state
@@ -98,7 +98,7 @@ const GroupChatModal = ({ children }) => { // Functional component definition wi
         },
       };
       const { data } = await axios.post( // Make POST request to create a group chat
-        `http://127.0.0.1:5000/api/chat/group`,
+        `/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),
