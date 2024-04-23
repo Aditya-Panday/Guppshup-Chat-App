@@ -9,7 +9,7 @@
 
 - 🔭 Project details **This is Chat Application, I have used Mern to create this application..**
 
-- 🔭 Project Live details **https://guppshup-chat-app.onrender.com**
+- 🔭 Project Live details **https://guppshup-chat-app.onrender.com/**
 
 - 💬 Ask me about **Full Stack or Mern Stack**
 
