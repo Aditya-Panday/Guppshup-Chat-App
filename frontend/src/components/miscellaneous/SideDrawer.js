@@ -94,7 +94,7 @@ function SideDrawer() {
         },
       };
 
-      const { data } = await axios.get(`http://localhost:5000/api/user?search=${search}`, config);
+      const { data } = await axios.get(`http://127.0.0.1:5000/api/user?search=${search}`, config);
 
       const filteredData = data.filter((user) => user.name.toLowerCase().startsWith(search.toLowerCase()));
 
@@ -123,7 +123,7 @@ function SideDrawer() {
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.post(`http://localhost:5000/api/chat`, { userId }, config);
+      const { data } = await axios.post(`http://127.0.0.1:5000/api/chat`, { userId }, config);
 
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]); //agar chat already hai toh..
       setSelectedChat(data);
