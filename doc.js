@@ -6,7 +6,7 @@
 // ( npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion) in frontend file
 // (  "proxy":"http://127.0.0.1:5000") in package.json file in frontend folder..
 // ( npm i react-router-dom ) in frontend file...
-// (npm i mongoose ) main folder
+// ( npm i mongoose ) main folder
 // ( npm i express-async-handler ) main folder
 // ( npm i jsonwebtoken ) main folder
 // ( npm i bcryptjs ) main folder
